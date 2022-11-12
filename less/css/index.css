@@ -1,0 +1,23 @@
+head,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  width: 1200px;
+}
+.wrapper .slider-container {
+  background-color: black;
+}
+.wrapper .slider-container .slider-row {
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+.wrapper .slider-container .slider-row .slide {
+  position: absolute;
+  width: 10000px;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
