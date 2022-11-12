@@ -52,3 +52,26 @@ div {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.wrapper .arrow {
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  color: #555;
+  position: absolute;
+  top: 190px;
+  border: 1px solid #555;
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper .arrow:hover {
+  color: #111;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.wrapper .arrow.next {
+  right: 0;
+}
+.wrapper .arrow.prev {
+  left: 0px;
+}

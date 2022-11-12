@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
         height: 400px;
         background-color: #000;
         overflow: hidden;
-        
+
         .slider-row {
             position: absolute;
             width: 10000px;
@@ -45,4 +45,29 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
         }
       }
     }
+    
+  .arrow {
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #555;
+    position: absolute;
+    top: 190px;
+    border: 1px solid #555;
+    padding: 5px 15px;
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        color: #111;
+        background-color: rgba(0,0,0,0.3);
+    }
+    &.next {
+        right: 0;
+    }
+    &.prev {
+        left: 0px;
+    }
+  }
 }
