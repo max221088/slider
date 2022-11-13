@@ -80,7 +80,7 @@ div {
   color: #111;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.wrapper .arrow {
+.wrapper .slider-container .arrow {
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
@@ -93,13 +93,13 @@ div {
   cursor: pointer;
   user-select: none;
 }
-.wrapper .arrow:hover {
+.wrapper .slider-container .arrow:hover {
   color: #111;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.wrapper .arrow.next {
+.wrapper .slider-container .arrow.next {
   right: 0;
 }
-.wrapper .arrow.prev {
+.wrapper .slider-container .arrow.prev {
   left: 0px;
 }
