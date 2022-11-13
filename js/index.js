@@ -1,13 +1,21 @@
 const $bottNext = document.querySelector('.arrow.next');
 const $bottPrev = document.querySelector('.arrow.prev');
 const $sliderRow = document.querySelector('.slider-row');
+const $slide = document.querySelectorAll('.slide');
 let distance = 0;
 let currentSlide = 0;
-let elements = document.querySelectorAll('.slide').length;
- console.log(elements);
+let elements = $slide.length;
+let widthSlide = document.querySelector('.slider-container').offsetWidth;
+
+$sliderRow.style.width = (widthSlide * elements + 100) + 'px';
+
+$slide.forEach ( function (slide) {
+    slide.style.width = widthSlide + 'px';
+});
+ console.log(widthSlide);
 
  function move (x) {
-distance = x * 800 * (-1);
+distance = x * widthSlide * (-1);
 $sliderRow.style.transform = 'translateX(' + distance + 'px)';
 };
 
