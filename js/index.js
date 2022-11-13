@@ -12,10 +12,12 @@ $sliderRow.style.transform = 'translateX(' + distance + 'px)';
 
 $bottNext.addEventListener('click', function(){
     currentSlide++;
+    if (currentSlide > 2 ) {currentSlide = 0}
     move (currentSlide);
 });
 
 $bottPrev.addEventListener('click', function(){
     currentSlide--;
+    if (currentSlide < 0 ) {currentSlide = 2}
     move (currentSlide);
 });
