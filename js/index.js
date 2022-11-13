@@ -2,6 +2,7 @@ const $bottNext = document.querySelector('.arrow.next');
 const $bottPrev = document.querySelector('.arrow.prev');
 const $sliderRow = document.querySelector('.slider-row');
 const $slide = document.querySelectorAll('.slide');
+const $navButton = document.querySelectorAll('.but');
 let distance = 0;
 let currentSlide = 0;
 let elements = $slide.length;
@@ -12,7 +13,7 @@ $sliderRow.style.width = (widthSlide * elements + 100) + 'px';
 $slide.forEach ( function (slide) {
     slide.style.width = widthSlide + 'px';
 });
- console.log(widthSlide);
+ console.log($navButton);
 
  function move (x) {
 distance = x * widthSlide * (-1);
@@ -31,3 +32,9 @@ $bottPrev.addEventListener('click', function(){
     move (currentSlide);
 });
 
+$navButton.forEach (function (el) {
+    el.addEventListener('click', function () {
+        numPic = this.getAttribute('data-position');
+        move(numPic-1);
+    });
+});

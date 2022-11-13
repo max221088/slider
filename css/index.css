@@ -49,6 +49,33 @@ div {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.wrapper .slider-container .nav-bar {
+  position: absolute;
+  top: 370px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper .slider-container .nav-bar .nav-butt {
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper .slider-container .nav-bar .nav-butt .but {
+  text-decoration: none;
+  display: inline;
+  color: #ff004c;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 40%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrapper .slider-container .nav-bar .nav-butt .but:hover {
+  color: #111;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .wrapper .arrow {
   text-decoration: none;
   text-align: center;
