@@ -51,8 +51,8 @@ div {
 }
 .wrapper .slider-container .nav-bar {
   position: absolute;
-  top: 370px;
-  width: 800px;
+  bottom: 5%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,12 +67,16 @@ div {
   display: inline;
   color: #ff004c;
   margin: 5px;
-  padding: 10px;
+  padding: 10px 13px;
   border: 1px solid #555;
-  border-radius: 40%;
+  border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .wrapper .slider-container .nav-bar .nav-butt .but:hover {
+  color: #111;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.wrapper .slider-container .nav-bar .nav-butt .but.active {
   color: #111;
   background-color: rgba(0, 0, 0, 0.3);
 }
