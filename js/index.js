@@ -14,14 +14,15 @@ $slide.forEach ( function (slide) {
     slide.style.width = widthSlide + 'px';
 });
 
- function move (x) {
-distance = x * widthSlide * (-1);
-$sliderRow.style.transform = 'translateX(' + distance + 'px)';
-};
+function move (x) {
+    distance = x * widthSlide * (-1);
+    $sliderRow.style.transform = 'translateX(' + distance + 'px)';
+    
+}
 
 function navActiv (currentSlide) {
     $navButton[currentSlide].classList.toggle('active')
-};
+}
 
 $bottNext.addEventListener('click', function(){
     navActiv(currentSlide);
@@ -29,7 +30,7 @@ $bottNext.addEventListener('click', function(){
     if (currentSlide > (elements - 1) ) {currentSlide = 0}
     move (currentSlide);
     navActiv(currentSlide);
-});
+})
 
 $bottPrev.addEventListener('click', function(){
     navActiv(currentSlide);
@@ -37,7 +38,7 @@ $bottPrev.addEventListener('click', function(){
     if (currentSlide < 0 ) {currentSlide = (elements - 1)}
     move (currentSlide);
     navActiv(currentSlide);
-});
+})
 
 $navButton.forEach (function (el) {
     el.addEventListener('click', function () {
@@ -46,4 +47,4 @@ $navButton.forEach (function (el) {
         move(currentSlide);
         navActiv(currentSlide);
     });
-});
+})
